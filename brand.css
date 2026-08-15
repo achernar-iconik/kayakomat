@@ -1,0 +1,64 @@
+:root {
+  --ink: #102b60;
+  --muted: #66718b;
+  --line: #d9deea;
+  --cream: #f4f5f8;
+  --green: #102b60;
+  --lime: #c82c35;
+  --orange: #c82c35;
+}
+
+[hidden] { display: none !important; }
+
+body, .login-card input, .filters input, .filters select, .primary, .outline, .text-button {
+  font-family: Quicksand, Manrope, sans-serif;
+}
+
+.brand { display: inline-flex; align-items: center; }
+.brand img { display: block; width: 184px; height: auto; }
+
+.login-layout { background: #102b60; }
+.brand-panel {
+  background: linear-gradient(90deg, rgba(12, 31, 67, .65), rgba(12, 31, 67, .16)), url('https://www.kayakomat.com/_next/image?url=%2Fimages%2FKAYAKOMAT_Hero_Image_Homepage.jpg&w=3840&q=100&dpl=dpl_8srkTH7hFW9znqSywwxv8Zsh8tze') center / cover;
+}
+.brand-panel::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11, 28, 61, .65), transparent 55%); }
+.brand-copy { max-width: 580px; }
+.brand-copy .eyebrow { color: #fff; font-weight: 700; }
+.brand-copy h1 { font-family: Quicksand, sans-serif; font-weight: 700; letter-spacing: -3px; }
+.brand-copy > p:last-child { color: #fff; font-weight: 500; }
+.sun, .water { display: none; }
+.login-panel { background: #f7f7f7; }
+.login-card h2 { color: #102b60; font-family: Quicksand, sans-serif; font-weight: 700; }
+.login-card .eyebrow { color: #c82c35; opacity: 1; font-weight: 700; }
+.login-card input { border-radius: 2px; border-color: #ccd2df; }
+.login-card input:focus, .filters input:focus, .filters select:focus { outline: 2px solid #c82c35; outline-offset: 1px; }
+.primary { border-radius: 2px; background: #c82c35; letter-spacing: .4px; text-transform: uppercase; }
+.primary:hover { background: #a91d2a; }
+
+.sidebar { background: #102b60; border: 0; color: #fff; }
+.sidebar .brand { padding: 6px 8px; }
+.sidebar .brand img { width: 175px; }
+nav a { color: #d4daeb; border-left: 3px solid transparent; border-radius: 0; }
+nav a.active, nav a:hover { color: #fff; background: rgba(255,255,255,.1); border-left-color: #c82c35; }
+.account { color: #fff; padding: 13px 8px; border-top: 1px solid rgba(255,255,255,.22); }
+.account small, .account button { color: #cbd4e7; }
+.avatar { background: #c82c35; }
+.dashboard { background: #f4f5f8; min-height: 100vh; }
+.topbar h1, .table-heading h2 { color: #102b60; font-family: Quicksand, sans-serif; font-weight: 700; }
+.topbar .eyebrow { color: #c82c35; opacity: 1; font-weight: 700; }
+.outline { border-radius: 2px; border-color: #102b60; color: #102b60; }
+.outline:hover { background: #102b60; color: #fff; }
+.summary article { border: 0; border-top: 4px solid #102b60; border-radius: 0; box-shadow: 0 4px 18px rgba(16,43,96,.08); }
+.summary article:nth-child(2) { border-color: #c82c35; }
+.summary article:nth-child(3) { border-color: #728bba; }
+.summary strong { color: #102b60; }
+.table-card { border: 0; border-radius: 0; box-shadow: 0 4px 18px rgba(16,43,96,.08); }
+th { background: #102b60; color: #fff; }
+.booking-id, .text-button { color: #c82c35; }
+.badge.active { color: #102b60; background: #dbe5f5; }
+.badge.confirmed { color: #9c2129; background: #f8dedf; }
+.pagination { border-color: #e3e6ee; }
+
+@media (max-width: 700px) {
+  .sidebar .brand img { width: 145px; }
+}

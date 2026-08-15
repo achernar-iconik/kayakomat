@@ -6,14 +6,15 @@
     <title>Kayakomat | Booking desk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="pagination.css" />
+    <link rel="stylesheet" href="brand.css" />
   </head>
   <body>
     <main id="login-view" class="login-layout">
       <section class="brand-panel">
-        <a class="brand" href="#">KAYAKOMAT<span>®</span></a>
+        <a class="brand" href="#" aria-label="Kayakomat"><img src="https://www.kayakomat.com/logo.svg" alt="Kayakomat" /></a>
         <div class="brand-copy">
           <p class="eyebrow">OPERATIONS CONSOLE</p>
           <h1>Keep every<br />paddle in view.</h1>
@@ -38,7 +39,7 @@
 
     <main id="app-view" hidden>
       <aside class="sidebar">
-        <a class="brand" href="#">KAYAKOMAT<span>®</span></a>
+        <a class="brand" href="#" aria-label="Kayakomat"><img src="https://www.kayakomat.com/logo.svg" alt="Kayakomat" /></a>
         <nav>
           <a class="active" href="#bookings"><i>▦</i> Bookings</a>
           <a href="#"><i>⌁</i> Locations</a>
@@ -60,6 +61,7 @@
           <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search guest or booking ID" /></label>
           <label><span>Location</span><select id="location"><option value="">All locations</option></select></label>
           <label><span>Status</span><select id="status"><option value="">All statuses</option><option>Confirmed</option><option>Active</option><option>Completed</option><option>Cancelled</option></select></label>
+          <label><span>Coupon</span><select id="coupon"><option value="">All bookings</option><option value="applied">Coupon applied</option><option value="none">No coupon</option></select></label>
           <label><span>From</span><input id="from-date" type="date" /></label>
           <label><span>To</span><input id="to-date" type="date" /></label>
           <button id="clear-filters" class="text-button">Clear filters</button>
