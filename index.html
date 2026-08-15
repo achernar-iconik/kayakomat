@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260815.3" />
-    <link rel="stylesheet" href="pagination.css?v=20260815.3" />
-    <link rel="stylesheet" href="brand.css?v=20260815.3" />
+    <link rel="stylesheet" href="styles.css?v=20260815.4" />
+    <link rel="stylesheet" href="pagination.css?v=20260815.4" />
+    <link rel="stylesheet" href="brand.css?v=20260815.4" />
   </head>
   <body>
     <main id="login-view" class="login-layout">
@@ -42,10 +42,8 @@
         <a class="brand" href="#" aria-label="Kayakomat"><img src="https://www.kayakomat.com/logo.svg" alt="Kayakomat" /></a>
         <nav>
           <a class="active" href="#bookings"><i>▦</i> Bookings</a>
-          <a href="#"><i>⌁</i> Locations</a>
-          <a href="#"><i>◒</i> Fleet</a>
         </nav>
-        <div class="account"><div class="avatar">AM</div><span><b>Alex Morgan</b><small>Operator</small></span><button id="logout" title="Sign out">↪</button></div>
+        <div class="account"><div id="operator-initials" class="avatar">—</div><span><b id="operator-email">Signed-in operator</b><small>Operator</small></span><button id="logout" title="Sign out">↪</button></div>
       </aside>
       <section class="dashboard">
         <header class="topbar">
@@ -75,6 +73,6 @@
         </section>
       </section>
     </main>
-    <script src="app.js?v=20260815.3"></script>
+    <script src="app.js?v=20260815.4"></script>
   </body>
 </html>
