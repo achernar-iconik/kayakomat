@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260815.1" />
-    <link rel="stylesheet" href="pagination.css?v=20260815.1" />
-    <link rel="stylesheet" href="brand.css?v=20260815.1" />
+    <link rel="stylesheet" href="styles.css?v=20260815.2" />
+    <link rel="stylesheet" href="pagination.css?v=20260815.2" />
+    <link rel="stylesheet" href="brand.css?v=20260815.2" />
   </head>
   <body>
     <main id="login-view" class="login-layout">
@@ -61,7 +61,8 @@
           <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search guest or booking ID" /></label>
           <label><span>Location</span><select id="location"><option value="">All locations</option></select></label>
           <label><span>Status</span><select id="status"><option value="">All statuses</option><option>Confirmed</option><option>Active</option><option>Completed</option><option>Cancelled</option></select></label>
-          <label><span>Coupon</span><select id="coupon"><option value="">All bookings</option><option value="applied">Coupon applied</option><option value="none">No coupon</option></select></label>
+          <label><span>Coupon code</span><input id="coupon" type="search" placeholder="Search coupon code" /></label>
+          <label><span>Coupon status</span><select id="coupon-status"><option value="">All bookings</option><option value="applied">Coupon applied</option><option value="none">No coupon</option></select></label>
           <label><span>From</span><input id="from-date" type="date" /></label>
           <label><span>To</span><input id="to-date" type="date" /></label>
           <button id="clear-filters" class="text-button">Clear filters</button>
@@ -74,6 +75,6 @@
         </section>
       </section>
     </main>
-    <script src="app.js?v=20260815.1"></script>
+    <script src="app.js?v=20260815.2"></script>
   </body>
 </html>
