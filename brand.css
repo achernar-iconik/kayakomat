@@ -41,6 +41,8 @@ body, .login-card input, .filters input, .filters select, .primary, .outline, .t
 nav a { color: #d4daeb; border-left: 3px solid transparent; border-radius: 0; }
 nav a.active, nav a:hover { color: #fff; background: rgba(255,255,255,.1); border-left-color: #c82c35; }
 .account { color: #fff; padding: 13px 8px; border-top: 1px solid rgba(255,255,255,.22); }
+.account .avatar { flex: 0 0 36px; aspect-ratio: 1; }
+.account > span { min-width: 0; }
 .account small, .account button { color: #cbd4e7; }
 .avatar { background: #c82c35; }
 .dashboard { background: #f4f5f8; min-height: 100vh; }
